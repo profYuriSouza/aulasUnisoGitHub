@@ -33,6 +33,6 @@ myButton.addEventListener("click", function() {
   alert("O resultado da operação " + num1 + " " + operation + " " + num2 + " é " + result + ".");
 
   const newDiv = document.createElement("div");
-  newDiv.innerHTML = "<h2>Olá, " + name + "!</h2><p>O resultado da operação " + num1 + " " + operation + " " + num2 + " é " + result + ".</p>";
+  newDiv.innerHTML = "<h2>Olá, " + name + "!</h2><p>O resultado da operação " + num1 + " " + operation + " " +  num2 + " é " + result + "adicionei mais um final aqui.</p>";
   document.body.appendChild(newDiv);
 });
