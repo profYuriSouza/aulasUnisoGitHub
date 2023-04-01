@@ -10,7 +10,7 @@
 
 .display {
   grid-column: 1 / span 4;
-  background-color: white;
+  background-color: blue;
   text-align: right;
   padding: 5px;
   font-size: 24px;
@@ -19,7 +19,7 @@
 
 button {
   font-size: 20px;
-  background-color: #f5f5f5;
+  background-color: red;
   color: black;
   border: none;
   border-radius: 5px;
