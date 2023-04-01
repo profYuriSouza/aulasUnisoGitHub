@@ -31,7 +31,6 @@ button {
 }
 
 button:hover {
-<<<<<<< HEAD
   background-color: #000;
   color: #fff;
 }
@@ -54,7 +53,4 @@ button.equal {
   grid-column: 3 / -1;
   background-color: #28a745;
   color: #fff;
-=======
-  background-color: #3e8e48;
->>>>>>> main
 }
