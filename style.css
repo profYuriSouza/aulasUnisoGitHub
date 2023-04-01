@@ -3,19 +3,14 @@
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
   padding: 20px;
-<<<<<<< HEAD
-  background-color: rgb(182, 21, 21);
-=======
-  background-color: #fff;
->>>>>>> ee3305655a574be544655b45267ddeecc030275e
+  background-color: #e92222;
   max-width: 300px;
   margin: 0 auto;
 }
 
 .display {
   grid-column: 1 / span 4;
-<<<<<<< HEAD
-  background-color: rgb(31, 50, 134);
+  background-color: rgb(59, 42, 160);
   text-align: right;
   padding: 5px;
   font-size: 24px;
@@ -30,8 +25,7 @@
 
 button {
   font-size: 20px;
-  background-color: #f5f8f8;
-<<<<<<< HEAD
+  background-color: #44db36;
   color: black;
 =======
   background-color: #a1b428;
