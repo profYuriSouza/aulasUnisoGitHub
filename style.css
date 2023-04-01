@@ -3,14 +3,14 @@
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
   padding: 20px;
-  background-color: #33b2d1;
+  background-color: #e92222;
   max-width: 300px;
   margin: 0 auto;
 }
 
 .display {
   grid-column: 1 / span 4;
-  background-color: rgb(59, 42, 160);
+  background-color: rgb(160, 42, 67);
   text-align: right;
   padding: 5px;
   font-size: 24px;
