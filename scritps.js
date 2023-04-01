@@ -87,8 +87,14 @@ clear.addEventListener("click", () => {
   reset();
 });
 
+<<<<<<< HEAD
 decimal.addEventListener("click", () => {
   if (!display.textContent.includes(".")) {
     updateDisplay(decimal.value);
   }
+=======
+  const newDiv = document.createElement("div");
+  newDiv.innerHTML = "<h2>Olá, " + name + "!</h2><p>O resultado da operação " + num1 + " " + operation + " " +  num2 + " é " + result + "adicionei mais um final aqui.</p>";
+  document.body.appendChild(newDiv);
+>>>>>>> main
 });
