@@ -28,7 +28,7 @@ button {
 }
 
 button:hover {
-  background-color: #ddd;
+  background-color: cornflowerblue;
 }
 
 button:active {
