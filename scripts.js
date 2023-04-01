@@ -5,9 +5,9 @@ const equal = document.querySelector(".equal");
 const clear = document.querySelector(".clear");
 const decimal = document.querySelector(".decimal");
 
-let firstOperand = null;
-let secondOperand = null;
-let operator = null;
+let firstOperand = "";
+let secondOperand = "";
+let operator = "";
 let shouldReset = false;
 
 function updateDisplay(value) {
@@ -20,9 +20,9 @@ function updateDisplay(value) {
 
 function reset() {
   display.textContent = "";
-  firstOperand = null;
-  secondOperand = null;
-  operator = null;
+  firstOperand = "";
+  secondOperand = "";
+  operator = "";
 }
 
 function calculate() {
@@ -48,9 +48,9 @@ function calculate() {
   }
 
   display.textContent = result;
-  firstOperand = result;
-  secondOperand = null;
-  operator = null;
+  firstOperand = result.toString();
+  secondOperand = "";
+  operator = "";
   shouldReset = true;
 }
 
@@ -62,11 +62,11 @@ numbers.forEach((number) => {
 
 operators.forEach((operator) => {
   operator.addEventListener("click", () => {
-    if (firstOperand === null) {
+    if (firstOperand === "" && operator === "") {
       firstOperand = display.textContent;
       operator = operator.value;
       shouldReset = true;
-    } else if (operator !== null) {
+    } else if (operator !== "") {
       secondOperand = display.textContent;
       calculate();
       operator = operator.value;
@@ -78,7 +78,8 @@ operators.forEach((operator) => {
 });
 
 equal.addEventListener("click", () => {
-  if (secondOperand !== null) {
+  if (operator !== "") {
+    secondOperand = display.textContent;
     calculate();
   }
 });
